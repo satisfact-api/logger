@@ -1,0 +1,48 @@
+{
+  "name": "@satisfact-api/logger",
+  "version": "1.0.0",
+  "description": "Simple and easy to use text logger.",
+  "main": "logger.js",
+  "type": "module",
+  "author": "Julien 'Shudrum' Martin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test",
+    "test:coverage": "NODE_V8_COVERAGE=coverage c8 -r html node --test"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dayjs": "^1.11.10",
+    "deepmerge": "^4.3.1"
+  },
+  "devDependencies": {
+    "c8": "^8.0.1",
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": "airbnb-base",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "import/extensions": [
+        "error",
+        {
+          "js": "always"
+        }
+      ]
+    }
+  }
+}
